@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="91.0" prefWidth="517.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.titleBarController">
+   <children>
+      <VBox prefHeight="91.0" prefWidth="382.0">
+         <children>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="89.0" prefWidth="402.0">
+               <children>
+                  <Button fx:id="textTanggal" mnemonicParsing="false" prefHeight="25.0" prefWidth="221.0" style="-fx-background-color: transparent;" text="01 January 2019  | 15:21:00" textFill="WHITE" />
+                  <ImageView fx:id="gambar1" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Time_50px.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label fx:id="lblAdmin2" />
+                  <Label fx:id="lblAdmin" prefHeight="26.0" prefWidth="180.0" text="Rio Yudha Pratama" textFill="#e1d339">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_Male_User_50px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox alignment="TOP_RIGHT" prefHeight="91.0" prefWidth="135.0">
+         <children>
+            <VBox alignment="TOP_RIGHT" prefHeight="91.0" prefWidth="138.0">
+               <children>
+                  <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#min" prefHeight="20.0" prefWidth="20.0" styleClass="btnTitleBar" stylesheets="@../css/style.css">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icons8_Subtract_52px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" onMouseClicked="#max" prefHeight="20.0" prefWidth="20.0" styleClass="btnTitleBar" stylesheets="@../css/style.css">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icons8_Enlarge_52px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" onMouseClicked="#close" prefHeight="20.0" prefWidth="20.0" styleClass="btnTitleBar" stylesheets="@../css/style.css">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icons8_Delete_52px_1.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <JFXButton onMouseClicked="#logout" prefHeight="40.0" prefWidth="135.0" ripplerFill="WHITE" styleClass="buttonExit" stylesheets="@../css/style.css" text="Logout" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons8_Exit_52px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</HBox>

@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="719.0" prefWidth="1249.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.reportController">
+   <children>
+      <AnchorPane style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+               <children>
+                  <TabPane tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+                    <tabs>
+                      <Tab text="LineChart Detail Order">
+                        <content>
+                          <AnchorPane>
+                                 <children>
+                                    <AnchorPane style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <AnchorPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="641.0" prefWidth="840.0" style="-fx-background-color: #F4F4F4;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                         <children>
+                                                            <HBox>
+                                                               <children>
+                                                                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="150.0" prefWidth="152.0" text="Total Order" textFill="#808080">
+                                                                     <font>
+                                                                        <Font name="System Bold" size="14.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <LineChart fx:id="lineChart" legendVisible="false" prefWidth="800.0" title="Chart Detail Order Per Tanggal (Total Order)">
+                                                                     <xAxis>
+                                                                        <CategoryAxis side="BOTTOM" />
+                                                                     </xAxis>
+                                                                     <yAxis>
+                                                                        <NumberAxis side="LEFT" />
+                                                                     </yAxis>
+                                                                  </LineChart>
+                                                               </children>
+                                                            </HBox>
+                                                            <HBox prefHeight="100.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="150.0" prefWidth="152.0" text="Order Baju" textFill="#808080">
+                                                                     <font>
+                                                                        <Font name="System Bold" size="14.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <LineChart fx:id="lineChart2" legendVisible="false" prefWidth="800.0" title="Chart Detail Order Per Tanggal (Produk Baju)">
+                                                                     <xAxis>
+                                                                        <CategoryAxis side="BOTTOM" />
+                                                                     </xAxis>
+                                                                     <yAxis>
+                                                                        <NumberAxis side="LEFT" />
+                                                                     </yAxis>
+                                                                  </LineChart>
+                                                               </children>
+                                                            </HBox>
+                                                            <HBox>
+                                                               <children>
+                                                                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="150.0" prefWidth="152.0" text="Order Kemeja" textFill="#808080">
+                                                                     <font>
+                                                                        <Font name="System Bold" size="14.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <LineChart fx:id="lineChart3" legendVisible="false" prefWidth="800.0" title="Chart Detail Order Per Tanggal (Produk Kemeja)">
+                                                                     <xAxis>
+                                                                        <CategoryAxis side="BOTTOM" />
+                                                                     </xAxis>
+                                                                     <yAxis>
+                                                                        <NumberAxis side="LEFT" />
+                                                                     </yAxis>
+                                                                  </LineChart>
+                                                               </children>
+                                                            </HBox>
+                                                            <HBox prefHeight="100.0" prefWidth="200.0">
+                                                               <children>
+                                                                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="150.0" prefWidth="152.0" text="Order Jersey" textFill="#808080">
+                                                                     <font>
+                                                                        <Font name="System Bold" size="14.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <LineChart fx:id="lineChart4" legendVisible="false" prefWidth="800.0" title="Chart Detail Order Per Tanggal (Produk Jersey)">
+                                                                     <xAxis>
+                                                                        <CategoryAxis side="BOTTOM" />
+                                                                     </xAxis>
+                                                                     <yAxis>
+                                                                        <NumberAxis side="LEFT" />
+                                                                     </yAxis>
+                                                                  </LineChart>
+                                                               </children>
+                                                            </HBox>
+                                                            <HBox>
+                                                               <children>
+                                                                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="150.0" prefWidth="152.0" text="Order Lainnya" textFill="#808080">
+                                                                     <font>
+                                                                        <Font name="System Bold" size="14.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <LineChart fx:id="lineChart5" legendVisible="false" prefWidth="800.0" title="Chart Detail Order Per Tanggal (Produk Lainnya)">
+                                                                     <xAxis>
+                                                                        <CategoryAxis side="BOTTOM" />
+                                                                     </xAxis>
+                                                                     <yAxis>
+                                                                        <NumberAxis side="LEFT" />
+                                                                     </yAxis>
+                                                                  </LineChart>
+                                                               </children>
+                                                            </HBox>
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                      <Tab text="Table Detail">
+                        <content>
+                          <AnchorPane>
+                                 <children>
+                                    <VBox prefHeight="520.0" prefWidth="956.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="50.0">
+                                       <children>
+                                          <AnchorPane>
+                                             <children>
+                                                <HBox alignment="CENTER_RIGHT" prefHeight="58.0" prefWidth="123.0" AnchorPane.rightAnchor="0.0">
+                                                   <children>
+                                                      <Button mnemonicParsing="false" onMouseClicked="#exportExcel" prefHeight="40.0" prefWidth="40.0" styleClass="buttonexport" stylesheets="@../css/style.css">
+                                                         <graphic>
+                                                            <ImageView fitHeight="28.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../images/icons8_Microsoft_Excel_48px.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </graphic>
+                                                      </Button>
+                                                      <Button mnemonicParsing="false" onMouseClicked="#exportPdf" prefHeight="40.0" prefWidth="40.0" styleClass="buttonexport" stylesheets="@../css/style.css">
+                                                         <graphic>
+                                                            <ImageView fitHeight="28.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../images/icons8_PDF_48px.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </graphic>
+                                                      </Button>
+                                                   </children>
+                                                </HBox>
+                                                <HBox prefHeight="58.0" prefWidth="907.0" AnchorPane.leftAnchor="50.0">
+                                                   <children>
+                                                      <ImageView fitHeight="45.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../images/iconkonfeksiapp.png" />
+                                                         </image>
+                                                         <HBox.margin>
+                                                            <Insets top="5.0" />
+                                                         </HBox.margin>
+                                                      </ImageView>
+                                                      <Label prefHeight="40.0" prefWidth="330.0" text="REPORT ORDER KONFEKSI">
+                                                         <font>
+                                                            <Font name="System Bold" size="16.0" />
+                                                         </font>
+                                                         <HBox.margin>
+                                                            <Insets />
+                                                         </HBox.margin>
+                                                         <padding>
+                                                            <Insets left="30.0" top="15.0" />
+                                                         </padding>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </AnchorPane>
+                                          <HBox prefHeight="40.0" prefWidth="269.0" style="-fx-background-color: #595959;">
+                                             <children>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="BULAN" textAlignment="CENTER" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="BAJU" textAlignment="CENTER" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="KEMEJA" textAlignment="CENTER" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="JERSEY" textAlignment="CENTER" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="LAINNYA" textAlignment="CENTER" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="TOTAL" textAlignment="CENTER" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <HBox prefHeight="100.0" prefWidth="200.0" />
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets left="50.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                          <VBox>
+                                             <VBox.margin>
+                                                <Insets left="50.0" />
+                                             </VBox.margin>
+                                             <children>
+                                                <HBox spacing="75.0">
+                                                   <children>
+                                                      <VBox alignment="CENTER" prefHeight="386.0" prefWidth="150.0">
+                                                         <children>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="January" textAlignment="CENTER" textFill="#686868">
+                                                               <padding>
+                                                                  <Insets left="20.0" />
+                                                               </padding>
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="February" textAlignment="CENTER" textFill="#686868">
+                                                               <padding>
+                                                                  <Insets left="20.0" />
+                                                               </padding>
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="March" textAlignment="CENTER" textFill="#686868">
+                                                               <padding>
+                                                                  <Insets left="20.0" />
+                                                               </padding>
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="April" textAlignment="CENTER" textFill="#686868">
+                                                               <padding>
+                                                                  <Insets left="20.0" />
+                                                               </padding>
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="May" textAlignment="CENTER" textFill="#686868">
+                                                               <padding>
+                                                                  <Insets left="20.0" />
+                                                               </padding>
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="Juny" textAlignment="CENTER" textFill="#686868">
+                                                               <padding>
+                                                                  <Insets left="20.0" />
+                                                               </padding>
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="July" textAlignment="CENTER" textFill="#686868">
+                                                               <padding>
+                                                                  <Insets left="20.0" />
+                                                               </padding>
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="August" textAlignment="CENTER" textFill="#686868">
+                                                               <padding>
+                                                                  <Insets left="20.0" />
+                                                               </padding>
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="September" textAlignment="CENTER" textFill="#686868">
+                                                               <padding>
+                                                                  <Insets left="20.0" />
+                                                               </padding>
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="October" textAlignment="CENTER" textFill="#686868">
+                                                               <padding>
+                                                                  <Insets left="20.0" />
+                                                               </padding>
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="November" textAlignment="CENTER" textFill="#686868">
+                                                               <padding>
+                                                                  <Insets left="20.0" />
+                                                               </padding>
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="December" textAlignment="CENTER" textFill="#686868">
+                                                               <padding>
+                                                                  <Insets left="20.0" />
+                                                               </padding>
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER" prefHeight="386.0" prefWidth="150.0">
+                                                         <children>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER" prefHeight="386.0" prefWidth="150.0">
+                                                         <children>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER" prefHeight="386.0" prefWidth="150.0">
+                                                         <children>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER" prefHeight="386.0" prefWidth="150.0">
+                                                         <children>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER" prefHeight="386.0" prefWidth="150.0">
+                                                         <children>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="#686868">
+                                                               <font>
+                                                                  <Font name="System Bold" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                          <HBox prefHeight="40.0" prefWidth="800.0" style="-fx-background-color: #595959;">
+                                             <children>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="Total" textAlignment="CENTER" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="359.0" text="0" textAlignment="CENTER" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets left="50.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                    </tabs>
+                  </TabPane>
+                  <AnchorPane prefHeight="35.0" style="-fx-background-color: #A3A3A3;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="50.0" style="-fx-background-color: #19B395;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <TextField fx:id="tf_filterDataTablePesanan" layoutX="764.0" layoutY="7.0" onKeyReleased="#filterDataPesanan" prefHeight="0.0" prefWidth="242.0" promptText="Pencarian" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: transparent; -fx-border-color: white;" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="10.0" />
+                  <ImageView fitHeight="27.0" fitWidth="46.0" layoutX="14.0" layoutY="11.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="14.0">
+                     <image>
+                        <Image url="@../images/icons8_Increase_96px_4.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="64.0" layoutY="17.0" prefHeight="17.0" prefWidth="226.0" text="Report" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Button mnemonicParsing="false" onMouseClicked="#refreshChart" prefHeight="50.0" prefWidth="50.0" styleClass="button3" stylesheets="@../css/style.css" AnchorPane.rightAnchor="0.0">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons8_Available_Updates_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="774.0" layoutY="13.0" mnemonicParsing="false" onMouseClicked="#clearFilterTablePesanan" prefHeight="15.0" prefWidth="15.0" styleClass="buttonclear" stylesheets="@../css/style.css" AnchorPane.rightAnchor="57.0">
+                     <graphic>
+                        <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons8_Delete_52px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="719.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="9.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="9.0">
+                     <image>
+                        <Image url="@../images/icons8_Google_Web_Search_50px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

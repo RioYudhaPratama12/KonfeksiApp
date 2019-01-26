@@ -1,0 +1,151 @@
+.btnLogin
+
+{
+    -fx-background-color : #303030;
+
+}
+
+.btnLogin:hover{
+    -fx-background-color : #7E354D;
+
+}
+
+.btnTitleBar
+{
+
+    -fx-background-color :  transparent ;
+
+
+}
+
+.btnTitleBar:hover{
+    -fx-background-color : #E81123;
+
+}
+
+.btnMenu
+{
+
+    -fx-background-color :  #1A1A1A ;
+
+
+}
+
+.btnMenu:hover{
+    -fx-background-color : #7E354D;
+
+}
+
+.btnMenu:pressed{
+    -fx-background-color : #34495e;
+
+}
+
+.buttonExit
+
+{
+    -fx-background-color : #080808;
+}
+
+.buttonExit:hover{
+    -fx-background-color : #E81123;
+}
+
+
+.buttonsimpan
+
+{
+    -fx-background-color :#19B395;
+    -fx-text-fill : white;
+    -fx-font-weight : bold;
+    -fx-background-radius : 30;
+    -fx-text-alignment : center;
+    -fx-border-radius : 30;
+    -fx-border-color : transparent;
+    -fx-border-weight : 20em;
+}
+
+.buttonsimpan:hover{
+
+    -fx-background-color : #303030;
+    -fx-text-fill : white;
+    -fx-font-weight : bold;
+    -fx-border-weight : 0em;
+    -fx-border-color : transparent;
+
+}
+
+
+.buttondelete
+
+{
+    -fx-background-color :#19B395;
+    -fx-text-fill : white;
+    -fx-font-weight : bold;
+    -fx-text-alignment : center;
+    -fx-border-color : transparent;
+    -fx-border-weight : 20em;
+}
+
+.buttondelete:hover{
+
+    -fx-background-color : #303030;
+    -fx-text-fill : white;
+    -fx-font-weight : bold;
+    -fx-border-weight : 0em;
+    -fx-border-color : transparent;
+
+}
+
+
+.button3
+
+{
+    -fx-background-color :transparent;
+
+}
+
+ .button3:hover{
+    -fx-background-color :#1ABC9C;
+ }
+
+.button3:pressed{
+    -fx-background-color :#328B85;
+}
+
+
+.buttonexport
+
+{
+    -fx-background-color :transparent;
+
+}
+
+ .buttonexport:hover{
+    -fx-background-color :#C8C8C8;
+ }
+
+.buttonexport:pressed{
+    -fx-background-color :#328B85;
+}
+
+
+
+
+.buttonclear
+
+{
+    -fx-background-color :transparent;
+    -fx-background-radius : 30;
+    -fx-border-radius : 30;
+
+}
+
+ .buttonclear:hover{
+    -fx-background-color :#1ABC9C;
+ }
+
+.buttonclear:pressed{
+    -fx-background-color :#328B85;
+}
+

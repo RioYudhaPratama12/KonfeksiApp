@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.tablePesananController">
+   <children>
+      <AnchorPane style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+               <children>
+                  <TabPane tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <tabs>
+                      <Tab text="Status Pesanan">
+                        <content>
+                          <AnchorPane>
+                                 <children>
+                                    <AnchorPane style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <AnchorPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="410.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <HBox alignment="CENTER_RIGHT" prefHeight="40.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="5.0">
+                                                   <children>
+                                                      <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" styleClass="buttonexport" stylesheets="@../css/style.css">
+                                                         <graphic>
+                                                            <ImageView fitHeight="28.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../images/icons8_Microsoft_Excel_48px.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </graphic>
+                                                      </Button>
+                                                      <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" styleClass="buttonexport" stylesheets="@../css/style.css">
+                                                         <graphic>
+                                                            <ImageView fitHeight="28.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../images/icons8_PDF_48px.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                         </graphic>
+                                                      </Button>
+                                                   </children>
+                                                </HBox>
+                                                <TableView fx:id="table_sablon" prefHeight="400.0" prefWidth="2771.0" stylesheets="@../css/styleTable.css" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="50.0">
+                                                   <columns>
+                                                      <TableColumn fx:id="col_sablon_kode_sablon" prefWidth="75.0" text="Kode Sablon" />
+                                                      <TableColumn fx:id="col_sablon_jenis_sablon" minWidth="0.0" prefWidth="75.0" text="Jenis Sablon" />
+                                                      <TableColumn fx:id="col_sablon_ukuran_sablon" prefWidth="111.0" text="Ukuran Sablon" />
+                                                      <TableColumn fx:id="col_sablon_harga_sablon" prefWidth="39.0" text="Harga Sablon" />
+                                                   </columns>
+                                                   <columnResizePolicy>
+                                                      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                   </columnResizePolicy>
+                                                </TableView>
+                                                <HBox alignment="CENTER_RIGHT" layoutX="74.0" layoutY="433.0" prefHeight="40.0" prefWidth="268.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="20.0">
+                                                   <children>
+                                                      <JFXButton prefHeight="30.0" prefWidth="92.0" styleClass="buttondelete" stylesheets="@../css/style.css" text="Hapus Data">
+                                                         <HBox.margin>
+                                                            <Insets left="10.0" right="10.0" />
+                                                         </HBox.margin>
+                                                         <cursor>
+                                                            <Cursor fx:constant="HAND" />
+                                                         </cursor>
+                                                      </JFXButton>
+                                                      <JFXButton prefHeight="30.0" prefWidth="92.0" styleClass="buttondelete" stylesheets="@../css/style.css" text="Edit Data">
+                                                         <HBox.margin>
+                                                            <Insets left="10.0" right="10.0" />
+                                                         </HBox.margin>
+                                                         <cursor>
+                                                            <Cursor fx:constant="HAND" />
+                                                         </cursor>
+                                                      </JFXButton>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane prefWidth="410.0" style="-fx-background-color: #303030;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <VBox alignment="CENTER_LEFT" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="30.0">
+                                                   <children>
+                                                      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="216.0" text="Summary" textAlignment="CENTER" textFill="#d2fc10">
+                                                         <font>
+                                                            <Font name="System Bold" size="36.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets />
+                                                         </VBox.margin>
+                                                         <opaqueInsets>
+                                                            <Insets />
+                                                         </opaqueInsets>
+                                                         <effect>
+                                                            <DropShadow />
+                                                         </effect>
+                                                      </Label>
+                                                      <Label alignment="TOP_LEFT" prefHeight="0.0" prefWidth="390.0" text="Status Order" textFill="WHITE">
+                                                         <font>
+                                                            <Font name="System Bold" size="22.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets bottom="50.0" left="30.0" />
+                                                         </VBox.margin>
+                                                         <opaqueInsets>
+                                                            <Insets />
+                                                         </opaqueInsets>
+                                                         <effect>
+                                                            <DropShadow />
+                                                         </effect>
+                                                      </Label>
+                                                      <VBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="200.0" style="-fx-background-color: #40393C;">
+                                                         <children>
+                                                            <Label fx:id="lblTotalOrder2" text="1000" textFill="#ffff02">
+                                                               <font>
+                                                                  <Font name="System Bold" size="30.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label text="Total Orderan" textFill="#e7e5e5">
+                                                               <font>
+                                                                  <Font name="System Bold" size="14.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                         <opaqueInsets>
+                                                            <Insets />
+                                                         </opaqueInsets>
+                                                         <VBox.margin>
+                                                            <Insets />
+                                                         </VBox.margin>
+                                                         <padding>
+                                                            <Insets left="50.0" />
+                                                         </padding>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER" prefHeight="70.0" prefWidth="200.0" style="-fx-background-color: #515151;">
+                                                         <children>
+                                                            <Label fx:id="lblOrderanSelesai" text="500" textFill="#40d4ee">
+                                                               <font>
+                                                                  <Font name="System Bold" size="30.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label text="Orderan Selesai" textFill="#e7e5e5">
+                                                               <font>
+                                                                  <Font name="System Bold" size="14.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                         <opaqueInsets>
+                                                            <Insets />
+                                                         </opaqueInsets>
+                                                         <VBox.margin>
+                                                            <Insets />
+                                                         </VBox.margin>
+                                                      </VBox>
+                                                      <VBox alignment="TOP_RIGHT" prefHeight="70.0" prefWidth="200.0" style="-fx-background-color: #DDDDDD;">
+                                                         <children>
+                                                            <Label fx:id="lblOrderanProses" text="250" textFill="#4d494c">
+                                                               <font>
+                                                                  <Font name="System Bold" size="30.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label text="Orderan On Proses" textFill="#6b6f6c">
+                                                               <font>
+                                                                  <Font name="System Bold" size="14.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                         <opaqueInsets>
+                                                            <Insets />
+                                                         </opaqueInsets>
+                                                         <VBox.margin>
+                                                            <Insets />
+                                                         </VBox.margin>
+                                                         <padding>
+                                                            <Insets right="50.0" />
+                                                         </padding>
+                                                      </VBox>
+                                                      <VBox alignment="CENTER" prefHeight="70.0" prefWidth="200.0" style="-fx-background-color: white;">
+                                                         <children>
+                                                            <Label fx:id="lblOrderanPending" text="250" textFill="#9a2c7f">
+                                                               <font>
+                                                                  <Font name="System Bold" size="30.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label text="Orderan Pending" textFill="#6b6f6c">
+                                                               <font>
+                                                                  <Font name="System Bold" size="14.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                         <opaqueInsets>
+                                                            <Insets />
+                                                         </opaqueInsets>
+                                                         <VBox.margin>
+                                                            <Insets />
+                                                         </VBox.margin>
+                                                      </VBox>
+                                                      <VBox alignment="TOP_CENTER" prefHeight="185.0" prefWidth="410.0">
+                                                         <children>
+                                                            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="52.0" prefWidth="410.0" text="Data yang ditampilkan adalah data per tanggal :" textAlignment="CENTER" textFill="#d3caca">
+                                                               <padding>
+                                                                  <Insets left="50.0" />
+                                                               </padding>
+                                                               <font>
+                                                                  <Font name="System Italic" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <Label fx:id="lblTanggalStatus" alignment="CENTER" contentDisplay="CENTER" prefHeight="32.0" prefWidth="264.0" text="30 Desember 2018" textAlignment="CENTER" textFill="#c5c9a0">
+                                                               <font>
+                                                                  <Font name="System Bold" size="22.0" />
+                                                               </font>
+                                                               <opaqueInsets>
+                                                                  <Insets />
+                                                               </opaqueInsets>
+                                                               <effect>
+                                                                  <DropShadow />
+                                                               </effect>
+                                                            </Label>
+                                                         </children>
+                                                         <opaqueInsets>
+                                                            <Insets />
+                                                         </opaqueInsets>
+                                                         <VBox.margin>
+                                                            <Insets bottom="10.0" />
+                                                         </VBox.margin>
+                                                      </VBox>
+                                                   </children>
+                                                   <opaqueInsets>
+                                                      <Insets />
+                                                   </opaqueInsets>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                      <Tab text="Data Pesanan">
+                        <content>
+                          <AnchorPane>
+                                 <children>
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="268.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="10.0">
+                                       <children>
+                                          <Button mnemonicParsing="false" onMouseClicked="#exportExcel" prefHeight="40.0" prefWidth="40.0" styleClass="buttonexport" stylesheets="@../css/style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="28.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../images/icons8_Microsoft_Excel_48px.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                          <Button mnemonicParsing="false" onMouseClicked="#exportPdf" prefHeight="40.0" prefWidth="40.0" styleClass="buttonexport" stylesheets="@../css/style.css">
+                                             <graphic>
+                                                <ImageView fitHeight="28.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../images/icons8_PDF_48px.png" />
+                                                   </image>
+                                                </ImageView>
+                                             </graphic>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="268.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="20.0">
+                                       <children>
+                                          <JFXButton onMouseClicked="#deleteItem" prefHeight="30.0" prefWidth="92.0" styleClass="buttondelete" stylesheets="@../css/style.css" text="Hapus Data">
+                                             <HBox.margin>
+                                                <Insets left="10.0" right="10.0" />
+                                             </HBox.margin>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </JFXButton>
+                                          <JFXButton onMouseClicked="#editData" prefHeight="30.0" prefWidth="92.0" styleClass="buttondelete" stylesheets="@../css/style.css" text="Edit Data">
+                                             <HBox.margin>
+                                                <Insets left="10.0" right="10.0" />
+                                             </HBox.margin>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </JFXButton>
+                                       </children>
+                                    </HBox>
+                                    <ScrollPane style="-fx-background-color: white;" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="60.0">
+                                       <content>
+                                          <TableView fx:id="table_pesanan" fixedCellSize="0.0" prefHeight="400.0" prefWidth="3657.0" stylesheets="@../css/styleTable.css">
+                                             <columns>
+                                                <TableColumn fx:id="col_no_pesanan" prefWidth="102.00003051757812" text="No. Pesanan" />
+                                                <TableColumn fx:id="col_nama_pemesan" prefWidth="75.0" text="Nama Pemesan" />
+                                                <TableColumn fx:id="col_no_telp" minWidth="0.0" prefWidth="64.99996948242188" text="No. Telp." />
+                                                <TableColumn fx:id="col_alamat" minWidth="0.0" prefWidth="86.00003051757812" text="Alamat" />
+                                                <TableColumn fx:id="col_jenis_produk" prefWidth="82.99993896484375" text="Jenis_Produk" />
+                                                <TableColumn fx:id="col_jenis_bahan" prefWidth="82.0" text="Jenis_Bahan" />
+                                                <TableColumn fx:id="col_kode_bahan" prefWidth="74.99993896484375" text="Kode Bahan" />
+                                                <TableColumn fx:id="col_harga_bahan" prefWidth="84.00006103515625" text="Harga Bahan" />
+                                                <TableColumn fx:id="col_jumlah_produk" minWidth="0.0" prefWidth="90.0" text="Jumlah Produk" />
+                                                <TableColumn fx:id="col_kode_ukuran1" minWidth="0.0" prefWidth="93.0" text="Kode Ukuran 1" />
+                                                <TableColumn fx:id="col_jumlah_ukuran1" minWidth="0.0" prefWidth="105.0" text="Jumlah Ukuran 1" />
+                                                <TableColumn fx:id="col_kode_ukuran2" prefWidth="92.0" text="Kode Ukuran 2" />
+                                                <TableColumn fx:id="col_jumlah_ukuran2" minWidth="0.0" prefWidth="50.0" text="Jumlah Ukuran 2" />
+                                                <TableColumn fx:id="col_kode_ukuran3" minWidth="7.0" prefWidth="93.0" text="Kode Ukuran 3" />
+                                                <TableColumn fx:id="col_jumlah_ukuran3" minWidth="4.0" prefWidth="50.0" text="Jumlah Ukuran 3" />
+                                                <TableColumn fx:id="col_kode_ukuran4" minWidth="0.0" prefWidth="27.0" text="Kode Ukuran 4" />
+                                                <TableColumn fx:id="col_jumlah_ukuran4" prefWidth="27.0" text="Jumlah Ukuran 4" />
+                                                <TableColumn fx:id="col_kode_ukuran5" prefWidth="75.0" text="Kode Ukuran 5" />
+                                                <TableColumn fx:id="col_jumlah_ukuran5" prefWidth="75.0" text="Jumlah Ukuran 5" />
+                                                <TableColumn fx:id="col_kode_sablon" prefWidth="75.0" text="Kode Sablon" />
+                                                <TableColumn fx:id="col_jenis_sablon" prefWidth="75.0" text="Jenis Sablon" />
+                                                <TableColumn fx:id="col_ukuran_sablon" prefWidth="75.0" text="Ukuran Sablon" />
+                                                <TableColumn fx:id="col_harga_sablon" prefWidth="75.0" text="Harga Sablon" />
+                                                <TableColumn fx:id="col_gambar_desain" prefWidth="75.0" text="Gambar Desain" />
+                                                <TableColumn fx:id="col_harga_pembayaran" prefWidth="75.0" text="Total Pembayaran" />
+                                                <TableColumn fx:id="col_dp" prefWidth="75.0" text="DP" />
+                                                <TableColumn fx:id="col_sisa_pembayaran" prefWidth="75.0" text="Sisa Pembayaran" />
+                                                <TableColumn fx:id="col_tanggal_pesanan" prefWidth="124.0" text="Tanggal Pemesanan" />
+                                                <TableColumn fx:id="col_status_pesanan" prefWidth="70.0" text="Status Pemesanan" />
+                                                <TableColumn fx:id="col_username" prefWidth="85.0" text="Nama Admin" />
+                                                <TableColumn fx:id="col_tahun" prefWidth="21.0" text="Tahun" />
+                                                <TableColumn fx:id="col_bulan" prefWidth="93.0" text="Bulan" />
+                                             </columns>
+                                             <columnResizePolicy>
+                                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                             </columnResizePolicy>
+                                          </TableView>
+                                       </content>
+                                    </ScrollPane>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                    </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="50.0" style="-fx-background-color: #19B395;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <TextField fx:id="tf_filterDataTablePesanan" layoutX="764.0" layoutY="7.0" onKeyReleased="#filterDataPesanan" prefHeight="0.0" prefWidth="242.0" promptText="Pencarian" style="-fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: transparent; -fx-border-color: white;" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="10.0" />
+                  <ImageView fitHeight="27.0" fitWidth="46.0" layoutX="14.0" layoutY="11.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="14.0">
+                     <image>
+                        <Image url="@../images/icons8_Show_Property_96px_3.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="64.0" layoutY="17.0" prefHeight="17.0" prefWidth="226.0" text="Data Pesanan" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Button mnemonicParsing="false" onMouseClicked="#refreshTablePesanan" prefHeight="50.0" prefWidth="50.0" styleClass="button3" stylesheets="@../css/style.css" AnchorPane.rightAnchor="0.0">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons8_Available_Updates_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="774.0" layoutY="13.0" mnemonicParsing="false" onMouseClicked="#clearFilterTablePesanan" prefHeight="15.0" prefWidth="15.0" styleClass="buttonclear" stylesheets="@../css/style.css" AnchorPane.rightAnchor="57.0">
+                     <graphic>
+                        <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons8_Delete_52px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="719.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="9.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="9.0">
+                     <image>
+                        <Image url="@../images/icons8_Google_Web_Search_50px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

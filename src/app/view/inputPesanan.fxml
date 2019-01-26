@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.inputPesananController">
+   <children>
+      <AnchorPane style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="50.0" style="-fx-background-color: #19B395;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="27.0" fitWidth="46.0" layoutX="14.0" layoutY="11.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="14.0">
+                     <image>
+                        <Image url="@../images/icons8_Autograph_96px_1.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="64.0" layoutY="17.0" prefHeight="17.0" prefWidth="229.0" text="Input Data Pesanan" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="550.0" AnchorPane.topAnchor="50.0">
+               <children>
+                  <HBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <VBox fx:id="cb_statusPesann" alignment="TOP_CENTER">
+                           <children>
+                              <AnchorPane prefHeight="193.0" prefWidth="862.0">
+                                 <children>
+                                    <AnchorPane prefHeight="190.0" prefWidth="862.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                       <children>
+                                          <VBox prefWidth="300.0">
+                                             <children>
+                                                <JFXTextField fx:id="tfNoPesanan" focusColor="#19b395" labelFloat="true" prefWidth="200.0" promptText="Nomor Pesanan" unFocusColor="#b9b9b9">
+                                                   <font>
+                                                      <Font name="Arial Rounded MT Bold" size="14.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets bottom="20.0" />
+                                                   </VBox.margin>
+                                                </JFXTextField>
+                                                <JFXTextField fx:id="tfNamaPemesan" focusColor="#19b395" labelFloat="true" promptText="Nama Pemesan" unFocusColor="#b9b9b9">
+                                                   <font>
+                                                      <Font name="Arial Rounded MT Bold" size="14.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets bottom="20.0" />
+                                                   </VBox.margin>
+                                                </JFXTextField>
+                                                <JFXTextField fx:id="tfNoTelp" focusColor="#19b395" labelFloat="true" promptText="Nomor Telepon" unFocusColor="#b9b9b9">
+                                                   <font>
+                                                      <Font name="Arial Rounded MT Bold" size="14.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets bottom="20.0" />
+                                                   </VBox.margin>
+                                                </JFXTextField>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="40.0" prefWidth="561.0" AnchorPane.topAnchor="145.0">
+                                             <children>
+                                                <JFXTextField fx:id="tfAlamat" focusColor="#19b395" labelFloat="true" promptText="Alamat" unFocusColor="#b9b9b9">
+                                                   <font>
+                                                      <Font name="Arial Rounded MT Bold" size="14.0" />
+                                                   </font>
+                                                </JFXTextField>
+                                             </children>
+                                          </VBox>
+                                          <VBox layoutY="185.0" prefHeight="31.0" prefWidth="150.0">
+                                             <children>
+                                                <JFXComboBox fx:id="cbJenisProduk" focusColor="#19b395" prefHeight="25.0" prefWidth="150.0" promptText="Pilih Jenis Produk" unFocusColor="#b9b9b9">
+                                                   <VBox.margin>
+                                                      <Insets bottom="20.0" top="10.0" />
+                                                   </VBox.margin>
+                                                </JFXComboBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                              <HBox>
+                                 <children>
+                                    <JFXComboBox fx:id="cbKodeBahan" focusColor="#19b395" prefHeight="25.0" prefWidth="150.0" promptText="Pilih Bahan" unFocusColor="#b9b9b9">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </JFXComboBox>
+                                    <JFXTextField fx:id="tfKodeBahan" editable="false" focusColor="#19b395" labelFloat="true" prefHeight="25.0" promptText="Kode Bahan" unFocusColor="#b9b9b9">
+                                       <font>
+                                          <Font name="Arial Rounded MT Bold" size="14.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </JFXTextField>
+                                    <JFXTextField fx:id="tfJenisBahan" editable="false" focusColor="#19b395" labelFloat="true" prefHeight="25.0" promptText="Jenis Bahan" unFocusColor="#b9b9b9">
+                                       <font>
+                                          <Font name="Arial Rounded MT Bold" size="14.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </JFXTextField>
+                                    <JFXTextField fx:id="tfHargaBahan" editable="false" focusColor="#19b395" labelFloat="true" prefHeight="25.0" promptText="Harga Bahan" unFocusColor="#b9b9b9">
+                                       <font>
+                                          <Font name="Arial Rounded MT Bold" size="14.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </JFXTextField>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox>
+                                 <children>
+                                    <JFXComboBox fx:id="cbKodeSablon" focusColor="#19b395" prefHeight="25.0" prefWidth="150.0" promptText="Pilih Sablon" unFocusColor="#b9b9b9">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </JFXComboBox>
+                                    <JFXTextField fx:id="tfKodeSablon" editable="false" focusColor="#19b395" labelFloat="true" prefHeight="25.0" promptText="Kode Sablon" unFocusColor="#b9b9b9">
+                                       <font>
+                                          <Font name="Arial Rounded MT Bold" size="14.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </JFXTextField>
+                                    <JFXTextField fx:id="tfUkuranSablon" editable="false" focusColor="#19b395" labelFloat="true" prefHeight="25.0" promptText="Ukuran Sablon" unFocusColor="#b9b9b9">
+                                       <font>
+                                          <Font name="Arial Rounded MT Bold" size="14.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </JFXTextField>
+                                    <JFXTextField fx:id="tfJenisSablon" editable="false" focusColor="#19b395" labelFloat="true" prefHeight="25.0" promptText="Jenis Sablon" unFocusColor="#b9b9b9">
+                                       <font>
+                                          <Font name="Arial Rounded MT Bold" size="14.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </JFXTextField>
+                                    <JFXTextField fx:id="tfHargaSablon" editable="false" focusColor="#19b395" labelFloat="true" prefHeight="25.0" promptText="Harga Sablon" unFocusColor="#b9b9b9">
+                                       <font>
+                                          <Font name="Arial Rounded MT Bold" size="14.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </JFXTextField>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets bottom="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT">
+                                 <children>
+                                    <Label text="Ukuran :  S">
+                                       <HBox.margin>
+                                          <Insets top="10.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Spinner fx:id="sizeS" prefHeight="28.0" prefWidth="100.0">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Spinner>
+                                    <Label text="M">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="10.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Spinner fx:id="sizeM" prefHeight="31.0" prefWidth="100.0">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Spinner>
+                                    <Label text="L">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="10.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Spinner fx:id="sizeL" prefHeight="31.0" prefWidth="100.0">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Spinner>
+                                    <Label text="XL">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="10.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Spinner fx:id="sizeXL" prefHeight="31.0" prefWidth="100.0">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Spinner>
+                                    <Label text="XXL">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="10.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Spinner fx:id="sizeXXL" prefHeight="31.0" prefWidth="100.0">
+                                       <HBox.margin>
+                                          <Insets left="5.0" top="10.0" />
+                                       </HBox.margin>
+                                    </Spinner>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <VBox prefHeight="31.0" prefWidth="150.0">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <JFXTextField fx:id="tfJumlahProduk" editable="false" focusColor="#19b395" labelFloat="true" prefHeight="27.0" prefWidth="151.0" promptText="Jumlah Produk" unFocusColor="#b9b9b9">
+                                             <font>
+                                                <Font name="Arial Rounded MT Bold" size="14.0" />
+                                             </font>
+                                          </JFXTextField>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" top="10.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <HBox prefHeight="148.0" prefWidth="829.0">
+                                       <children>
+                                          <VBox prefHeight="216.0" prefWidth="400.0">
+                                             <children>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="400.0">
+                                                   <children>
+                                                      <Label alignment="BOTTOM_LEFT" prefHeight="19.0" prefWidth="215.0" text="Total Pembayaran" textFill="#757575">
+                                                         <font>
+                                                            <Font name="System Bold" size="13.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <TextField fx:id="tfTotalPembayaran" editable="false" prefHeight="25.0" prefWidth="338.0">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </TextField>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="400.0">
+                                                   <children>
+                                                      <Label alignment="BOTTOM_LEFT" prefHeight="19.0" prefWidth="215.0" text="DP 50%" textFill="#757575">
+                                                         <font>
+                                                            <Font name="System Bold" size="13.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <TextField fx:id="tf_DP" editable="false" prefHeight="25.0" prefWidth="338.0">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </TextField>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="400.0">
+                                                   <children>
+                                                      <Label alignment="BOTTOM_LEFT" prefHeight="19.0" prefWidth="215.0" text="Sisa Pembayaran" textFill="#757575">
+                                                         <font>
+                                                            <Font name="System Bold" size="13.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <TextField fx:id="tf_sisaPembayaran" editable="false" prefHeight="25.0" prefWidth="338.0">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </TextField>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="400.0">
+                                                   <children>
+                                                      <Label alignment="BOTTOM_LEFT" prefHeight="19.0" prefWidth="215.0" text="Tanggal Pemesanan" textFill="#757575">
+                                                         <font>
+                                                            <Font name="System Bold" size="13.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <TextField fx:id="tfTanggalPemesanan" editable="false" prefHeight="25.0" prefWidth="338.0">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </TextField>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                             <HBox.margin>
+                                                <Insets right="20.0" />
+                                             </HBox.margin>
+                                          </VBox>
+                                          <VBox prefHeight="216.0" prefWidth="400.0">
+                                             <children>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="400.0">
+                                                   <children>
+                                                      <Label alignment="BOTTOM_LEFT" prefHeight="19.0" prefWidth="215.0" text="Status Pesanan" textFill="#757575">
+                                                         <font>
+                                                            <Font name="System Bold" size="13.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <JFXComboBox fx:id="cbStatusPesanan" focusColor="#19b395" prefHeight="31.0" prefWidth="309.0" promptText="Set Status Pesanan" unFocusColor="#b9b9b9">
+                                                         <HBox.margin>
+                                                            <Insets bottom="5.0" />
+                                                         </HBox.margin>
+                                                      </JFXComboBox>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="400.0">
+                                                   <children>
+                                                      <Label alignment="BOTTOM_LEFT" prefHeight="19.0" prefWidth="215.0" text="Admin" textFill="#757575">
+                                                         <font>
+                                                            <Font name="System Bold" size="13.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <TextField fx:id="tfAdmin" editable="false" prefHeight="25.0" prefWidth="338.0">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </TextField>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="400.0">
+                                                   <children>
+                                                      <Label alignment="BOTTOM_LEFT" prefHeight="19.0" prefWidth="215.0" text="Tahun" textFill="#757575">
+                                                         <font>
+                                                            <Font name="System Bold" size="13.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <TextField fx:id="tfTahunPemesanan" editable="false" prefHeight="25.0" prefWidth="338.0">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </TextField>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="400.0">
+                                                   <children>
+                                                      <Label alignment="BOTTOM_LEFT" prefHeight="19.0" prefWidth="215.0" text="Bulan" textFill="#757575">
+                                                         <font>
+                                                            <Font name="System Bold" size="13.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <TextField fx:id="tfBulanPemesanan" editable="false" prefHeight="25.0" prefWidth="338.0">
+                                                         <HBox.margin>
+                                                            <Insets left="30.0" />
+                                                         </HBox.margin>
+                                                      </TextField>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </VBox>
+                                       </children>
+                                       <padding>
+                                          <Insets top="10.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets bottom="30.0" left="40.0" top="30.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="869.0" layoutY="50.0" prefHeight="599.0" prefWidth="400.0" style="-fx-background-color: whitesmoke;" AnchorPane.bottomAnchor="215.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="70.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fx:id="imageView" fitHeight="477.0" fitWidth="550.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/preview.jpg" />
+                           </image>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <JFXButton onAction="#uploadDesignFile" prefHeight="40.0" prefWidth="143.0" ripplerFill="WHITE" style="-fx-background-color: #757575;" text="UPLOAD GAMBAR" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                              <TextField fx:id="tfGambar" prefHeight="25.0" prefWidth="334.0">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <HBox alignment="CENTER" layoutX="974.0" layoutY="676.0" AnchorPane.bottomAnchor="150.0" AnchorPane.rightAnchor="105.0">
+               <children>
+                  <JFXButton onMouseClicked="#tambahPesanan" prefHeight="40.0" prefWidth="150.0" ripplerFill="WHITE" styleClass="buttondelete" stylesheets="@../css/style.css" text="SIMPAN">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton onMouseClicked="#reset" prefHeight="40.0" prefWidth="150.0" ripplerFill="WHITE" styleClass="buttondelete" stylesheets="@../css/style.css" text="RESET">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.editPesananController">
+   <children>
+      <HBox prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: black;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="25.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+               <image>
+                  <Image url="@../images/icons8_Edit_52px.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="20.0" top="7.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="40.0" prefWidth="166.0" style="-fx-background-color: #080808;" text="Edit Pesanan" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox AnchorPane.topAnchor="40.0">
+         <children>
+            <VBox alignment="TOP_CENTER">
+               <children>
+                  <AnchorPane prefHeight="260.0" prefWidth="150.0">
+                     <children>
+                        <AnchorPane prefHeight="325.0" prefWidth="359.0" AnchorPane.leftAnchor="0.0">
+                           <children>
+                              <VBox prefWidth="300.0">
+                                 <children>
+                                    <JFXTextField fx:id="tfNoPesanan" focusColor="#19b395" labelFloat="true" prefWidth="200.0" promptText="Nomor Pesanan" unFocusColor="#b9b9b9">
+                                       <font>
+                                          <Font name="Arial Rounded MT Bold" size="14.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="20.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                    <JFXTextField fx:id="tfNamaPemesan" focusColor="#19b395" labelFloat="true" promptText="Nama Pemesan" unFocusColor="#b9b9b9">
+                                       <font>
+                                          <Font name="Arial Rounded MT Bold" size="14.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="20.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                    <JFXTextField fx:id="tfNoTelp" focusColor="#19b395" labelFloat="true" promptText="Nomor Telepon" unFocusColor="#b9b9b9">
+                                       <font>
+                                          <Font name="Arial Rounded MT Bold" size="14.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="20.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="155.0" prefWidth="426.0" AnchorPane.topAnchor="145.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="102.0" text="Alamat" textFill="#727272">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <TextArea prefHeight="54.0" prefWidth="411.0" />
+                                 </children>
+                              </VBox>
+                              <VBox layoutY="249.0" prefHeight="76.0" prefWidth="150.0" AnchorPane.topAnchor="249.0">
+                                 <children>
+                                    <JFXTextField fx:id="tfJabatan1113" focusColor="#19b395" labelFloat="true" prefHeight="27.0" prefWidth="235.0" promptText="Jumlah Produk" unFocusColor="#b9b9b9">
+                                       <font>
+                                          <Font name="Arial Rounded MT Bold" size="14.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets bottom="20.0" />
+                                       </VBox.margin>
+                                    </JFXTextField>
+                                    <JFXComboBox fx:id="cbJenisProduk" focusColor="#19b395" prefHeight="25.0" prefWidth="150.0" promptText="Pilih Jenis Produk" unFocusColor="#b9b9b9">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </JFXComboBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="325.0" prefWidth="426.0" style="-fx-background-color: whitesmoke;" AnchorPane.rightAnchor="0.0">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <ImageView fx:id="imageView" fitHeight="218.0" fitWidth="255.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/preview.jpg" />
+                                       </image>
+                                       <VBox.margin>
+                                          <Insets left="30.0" top="20.0" />
+                                       </VBox.margin>
+                                    </ImageView>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <JFXButton onAction="#uploadDesignFile" prefHeight="25.0" prefWidth="224.0" ripplerFill="WHITE" style="-fx-background-color: #757575;" text="Upload Desain" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                             <HBox.margin>
+                                                <Insets left="10.0" />
+                                             </HBox.margin>
+                                          </JFXButton>
+                                       </children>
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <VBox.margin>
+                                          <Insets left="20.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <TextField fx:id="tfgambar" prefHeight="25.0" prefWidth="347.0">
+                                       <VBox.margin>
+                                          <Insets left="30.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="20.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <HBox>
+                     <children>
+                        <JFXComboBox fx:id="cbKodeProduk" focusColor="#19b395" prefHeight="25.0" prefWidth="150.0" promptText="Pilih Kode Bahan" unFocusColor="#b9b9b9">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </JFXComboBox>
+                        <JFXTextField fx:id="tfUsername11" focusColor="#19b395" labelFloat="true" prefHeight="25.0" promptText="Jenis Bahan" unFocusColor="#b9b9b9">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </JFXTextField>
+                        <JFXTextField fx:id="tfNamaLengkap11" focusColor="#19b395" labelFloat="true" prefHeight="25.0" promptText="Harga Bahan" unFocusColor="#b9b9b9">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </JFXTextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT">
+                     <children>
+                        <VBox alignment="CENTER_LEFT">
+                           <children>
+                              <JFXComboBox fx:id="cbUkuran1" focusColor="#19b395" prefHeight="25.0" prefWidth="150.0" promptText="Pilih Ukuran 1" unFocusColor="#b9b9b9">
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </JFXComboBox>
+                              <JFXTextField fx:id="tfUkuran1" focusColor="#19b395" labelFloat="true" prefHeight="25.0" prefWidth="150.0" promptText="Jumlah Ukuran 1" unFocusColor="#b9b9b9">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </JFXTextField>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <padding>
+                              <Insets top="20.0" />
+                           </padding>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT">
+                           <children>
+                              <JFXComboBox fx:id="cbUkuran2" focusColor="#19b395" prefHeight="25.0" prefWidth="150.0" promptText="Pilih Ukuran 2" unFocusColor="#b9b9b9">
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </JFXComboBox>
+                              <JFXTextField fx:id="tfUkuran2" focusColor="#19b395" labelFloat="true" prefHeight="25.0" prefWidth="150.0" promptText="Jumlah Ukuran 2" unFocusColor="#b9b9b9">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </JFXTextField>
+                           </children>
+                           <padding>
+                              <Insets left="20.0" top="20.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT">
+                           <children>
+                              <JFXComboBox fx:id="cbUkuran3" focusColor="#19b395" prefHeight="25.0" prefWidth="150.0" promptText="Pilih Ukuran 3" unFocusColor="#b9b9b9">
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </JFXComboBox>
+                              <JFXTextField fx:id="tfUkuran3" focusColor="#19b395" labelFloat="true" prefHeight="25.0" prefWidth="150.0" promptText="Jumlah Ukuran 3" unFocusColor="#b9b9b9">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </JFXTextField>
+                           </children>
+                           <padding>
+                              <Insets left="20.0" top="20.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT">
+                           <children>
+                              <JFXComboBox fx:id="cbUkuran4" focusColor="#19b395" prefHeight="25.0" prefWidth="150.0" promptText="Pilih Ukuran 4" unFocusColor="#b9b9b9">
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </JFXComboBox>
+                              <JFXTextField fx:id="tfUkuran4" focusColor="#19b395" labelFloat="true" prefHeight="25.0" prefWidth="150.0" promptText="Jumlah Ukuran 4" unFocusColor="#b9b9b9">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </JFXTextField>
+                           </children>
+                           <padding>
+                              <Insets left="20.0" top="20.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER_LEFT">
+                           <children>
+                              <JFXComboBox fx:id="cbUkuran5" focusColor="#19b395" prefHeight="25.0" prefWidth="150.0" promptText="Pilih Ukuran 5" unFocusColor="#b9b9b9">
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </JFXComboBox>
+                              <JFXTextField fx:id="tfUkuran5" focusColor="#19b395" labelFloat="true" prefHeight="25.0" prefWidth="150.0" promptText="Jumlah Ukuran 5" unFocusColor="#b9b9b9">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                 </VBox.margin>
+                              </JFXTextField>
+                           </children>
+                           <padding>
+                              <Insets left="20.0" top="20.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <JFXComboBox fx:id="cbKodeSablon" focusColor="#19b395" prefHeight="25.0" prefWidth="150.0" promptText="Pilih Kode Sablon" unFocusColor="#b9b9b9">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </JFXComboBox>
+                        <JFXComboBox fx:id="cbUkuranSablon" focusColor="#19b395" prefHeight="25.0" prefWidth="150.0" promptText="Pilih Ukuran Sablon" unFocusColor="#b9b9b9">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </JFXComboBox>
+                        <JFXTextField fx:id="tfUsername111" focusColor="#19b395" labelFloat="true" prefHeight="25.0" promptText="Jenis Sablon" unFocusColor="#b9b9b9">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </JFXTextField>
+                        <JFXTextField fx:id="tfNamaLengkap111" focusColor="#19b395" labelFloat="true" prefHeight="25.0" promptText="Harga Sablon" unFocusColor="#b9b9b9">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </JFXTextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="20.0" />
+                     </padding>
+                  </HBox>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <HBox prefHeight="148.0" prefWidth="829.0">
+                           <children>
+                              <VBox prefHeight="216.0" prefWidth="400.0">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="400.0">
+                                       <children>
+                                          <Label alignment="BOTTOM_LEFT" prefHeight="19.0" prefWidth="215.0" text="Total Pembayaran" textFill="#757575">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="tfTotalPembayaran" editable="false" prefHeight="25.0" prefWidth="338.0">
+                                             <HBox.margin>
+                                                <Insets left="30.0" />
+                                             </HBox.margin>
+                                          </TextField>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="400.0">
+                                       <children>
+                                          <Label alignment="BOTTOM_LEFT" prefHeight="19.0" prefWidth="215.0" text="DP 50%" textFill="#757575">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="tf_DP" editable="false" prefHeight="25.0" prefWidth="338.0">
+                                             <HBox.margin>
+                                                <Insets left="30.0" />
+                                             </HBox.margin>
+                                          </TextField>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="400.0">
+                                       <children>
+                                          <Label alignment="BOTTOM_LEFT" prefHeight="19.0" prefWidth="215.0" text="Sisa Pembayaran" textFill="#757575">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="tf_sisaPembayaran" editable="false" prefHeight="25.0" prefWidth="338.0">
+                                             <HBox.margin>
+                                                <Insets left="30.0" />
+                                             </HBox.margin>
+                                          </TextField>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="400.0">
+                                       <children>
+                                          <Label alignment="BOTTOM_LEFT" prefHeight="19.0" prefWidth="215.0" text="Tanggal Pemesanan" textFill="#757575">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="tfTanggalPemesanan" editable="false" prefHeight="25.0" prefWidth="338.0">
+                                             <HBox.margin>
+                                                <Insets left="30.0" />
+                                             </HBox.margin>
+                                          </TextField>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets right="20.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox prefHeight="216.0" prefWidth="400.0">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="400.0">
+                                       <children>
+                                          <Label alignment="BOTTOM_LEFT" prefHeight="19.0" prefWidth="215.0" text="Status Pesanan" textFill="#757575">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="tfStatusPesanan" editable="false" prefHeight="25.0" prefWidth="338.0">
+                                             <HBox.margin>
+                                                <Insets left="30.0" />
+                                             </HBox.margin>
+                                          </TextField>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="400.0">
+                                       <children>
+                                          <Label alignment="BOTTOM_LEFT" prefHeight="19.0" prefWidth="215.0" text="Admin" textFill="#757575">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="tfAdmin" editable="false" prefHeight="25.0" prefWidth="338.0">
+                                             <HBox.margin>
+                                                <Insets left="30.0" />
+                                             </HBox.margin>
+                                          </TextField>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="400.0">
+                                       <children>
+                                          <Label alignment="BOTTOM_LEFT" prefHeight="19.0" prefWidth="215.0" text="Tahun" textFill="#757575">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="tfTahunPemesanan" editable="false" prefHeight="25.0" prefWidth="338.0">
+                                             <HBox.margin>
+                                                <Insets left="30.0" />
+                                             </HBox.margin>
+                                          </TextField>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="400.0">
+                                       <children>
+                                          <Label alignment="BOTTOM_LEFT" prefHeight="19.0" prefWidth="215.0" text="Bulan" textFill="#757575">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="tfBulanPemesanan" editable="false" prefHeight="25.0" prefWidth="338.0">
+                                             <HBox.margin>
+                                                <Insets left="30.0" />
+                                             </HBox.margin>
+                                          </TextField>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <JFXButton onMouseClicked="#updatePesanan" prefHeight="40.0" prefWidth="400.0" ripplerFill="WHITE" styleClass="buttondelete" stylesheets="@../css/style.css" text="UPDATE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </JFXButton>
+                        <JFXButton onMouseClicked="#reset" prefHeight="40.0" prefWidth="400.0" ripplerFill="WHITE" styleClass="buttondelete" stylesheets="@../css/style.css" text="RESET">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <HBox.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets bottom="30.0" left="30.0" top="30.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

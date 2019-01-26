@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onMouseDragged="#dragged" onMousePressed="#pressed" prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.HomeController">
+   <children>
+      <BorderPane layoutX="-20.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="87.0" style="-fx-background-color: #080808;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="76.0" fitWidth="447.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="10.0">
+                     <image>
+                        <Image url="@../images/logo11.png" />
+                     </image>
+                  </ImageView>
+                  <fx:include source="TitleBar.fxml" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children></AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="40.0" style="-fx-background-color: #080808;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="30.0" layoutY="6.0" prefHeight="27.0" prefWidth="996.0" text="© Copyright  |   Teknik Informatika | UNIKOM ™ | 2019" textFill="WHITE">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+         </bottom>
+         <left>
+            <AnchorPane prefHeight="773.0" prefWidth="279.0" style="-fx-background-color: #080808;" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="773.0" prefWidth="289.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <JFXButton fx:id="btnHome" contentDisplay="TOP" onAction="#handleClick" prefHeight="127.0" prefWidth="350.0" ripplerFill="WHITE" styleClass="btnMenu" stylesheets="@../css/style.css" text="Home" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icons8_Home_Page_96px_5.png" />
+                                 </image>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets bottom="1.5" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="btnInput" contentDisplay="TOP" onAction="#handleClick" prefHeight="127.0" prefWidth="350.0" ripplerFill="WHITE" styleClass="btnMenu" stylesheets="@../css/style.css" text="Input Data Pesanan" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icons8_Autograph_96px.png" />
+                                 </image>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets bottom="1.5" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="btnStatus" contentDisplay="TOP" onAction="#handleClick" prefHeight="127.0" prefWidth="350.0" ripplerFill="WHITE" styleClass="btnMenu" stylesheets="@../css/style.css" text="Status Pesanan" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icons8_Show_Property_96px_2.png" />
+                                 </image>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets bottom="1.5" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="btnLaporan" contentDisplay="TOP" onAction="#handleClick" prefHeight="127.0" prefWidth="350.0" ripplerFill="WHITE" styleClass="btnMenu" stylesheets="@../css/style.css" text="Laporan" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icons8_Increase_96px_3.png" />
+                                 </image>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets bottom="1.5" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="btnSablon" contentDisplay="TOP" onAction="#handleClick" prefHeight="127.0" prefWidth="350.0" ripplerFill="WHITE" styleClass="btnMenu" stylesheets="@../css/style.css" text="Daftar Sablon" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icons8_Paint_Palette_96px_1.png" />
+                                 </image>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets bottom="1.5" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="btnBahan" contentDisplay="TOP" onAction="#handleClick" prefHeight="127.0" prefWidth="350.0" ripplerFill="WHITE" styleClass="btnMenu" stylesheets="@../css/style.css" text="Daftar Bahan" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icons8_Jersey_96px_2.png" />
+                                 </image>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets bottom="1.5" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="btnUser" contentDisplay="TOP" onAction="#handleClick" prefHeight="127.0" prefWidth="350.0" ripplerFill="WHITE" styleClass="btnMenu" stylesheets="@../css/style.css" text="Tambah User" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icons8_Add_User_Group_Man_Man_96px.png" />
+                                 </image>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets bottom="1.5" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="btnTentang" contentDisplay="TOP" onAction="#handleClick" prefHeight="127.0" prefWidth="350.0" ripplerFill="WHITE" styleClass="btnMenu" stylesheets="@../css/style.css" text="Tentang" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/icons8_About_96px_3.png" />
+                                 </image>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets bottom="1.5" />
+                           </VBox.margin>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <StackPane BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane fx:id="pnInput">
+                     <children>
+                        <fx:include source="inputPesanan.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children></AnchorPane>
+                  <AnchorPane fx:id="pnStatus">
+                     <children>
+                        <fx:include source="pesanan.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children></AnchorPane>
+                  <AnchorPane fx:id="pnUser">
+                     <children>
+                        <fx:include source="tambahuser.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children></AnchorPane>
+                  <AnchorPane fx:id="pnTentang" prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <fx:include fx:id="view" source="tentang.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="pnLaporan">
+                     <children>
+                        <fx:include source="report.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children></AnchorPane>
+                  <AnchorPane fx:id="pnSablon">
+                     <children>
+                        <fx:include source="daftarSablon.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children></AnchorPane>
+                  <AnchorPane fx:id="pnBahan">
+                     <children>
+                        <fx:include source="daftarBahan.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children></AnchorPane>
+                  <AnchorPane fx:id="pnHome">
+                     <children>
+                        <fx:include source="beranda.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </StackPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
